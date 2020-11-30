@@ -27,10 +27,8 @@
     "format:fix": "prettier --write src/**/*.ts{,x}"
   },
   "lint-staged": {
-    "./src/**/*.ts{,x}": [
-      "eslint --fix",
-      "prettier --write ."
-    ]
+    "src/**/*.{ts, tsx}": "eslint --fix",
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
   },
   "husky": {
     "hooks": {
