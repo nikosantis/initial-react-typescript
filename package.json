@@ -27,7 +27,7 @@
     "format:fix": "prettier --write src/**/*.ts{,x}"
   },
   "lint-staged": {
-    "src/**/*.ts{,x}": [
+    "./src/**/*.ts{,x}": [
       "eslint --fix",
       "prettier --write ."
     ]
